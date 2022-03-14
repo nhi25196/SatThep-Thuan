@@ -1,0 +1,176 @@
+@media screen and (max-width:768px){
+    header{
+        .header_top{
+            text-align: center;
+            font-size: 12px;
+        }
+        .header_content{
+            background-size: cover;
+            .container{display: flex;
+                .logo{
+                    flex: 4;
+                    float:left;
+                    img{
+                        width:100%;
+                        padding: 15px 0px;
+                        }
+                    }
+                .info{
+                        flex: 6;
+                        float:left;
+                        font-size: 12px;
+                        text-align: right;
+                }
+                &::after{
+                    clear: both;
+                    content: '';
+                    display: table;
+                }  
+            
+            }
+            
+         
+        }
+    }
+    nav{
+        .nav_hide{
+            display: none !important;
+        }
+    }
+
+    nav{
+        .container{
+            .menu-mobile{
+                display: block !important;
+              
+                .content{
+                    display: flex;
+                    font-size: 14px;
+                    .title{
+                        color: white;
+                        padding:10px;
+                        flex: 9;
+                    }
+                    .icon{
+                        text-align: right;
+                        flex:1;
+                        color:white;
+                        padding:10px;
+                        .is_active_bar{
+                            i{
+                                &::before{
+                                    content: "\f00d";
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav .nav{
+        flex-direction: column;
+        .menu{font-size: 14px;
+            ul{
+                li{
+                    float: none;
+                    .sub-menu{
+                        .dropdown-sub-menu-2{
+                            position: relative;
+                            .dropdown-2{
+                                display: block;
+                                color: white;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                padding: 15px;
+                                .up{
+                                    i{
+                                        &::before{
+                                            content:'\f0d8';
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .sub-menu-2{
+                                position: unset;
+                                width:100%;
+                                padding:20px;
+                                display: none;
+                            }
+                            
+                        }
+                    }
+                }
+                .dropdown-sub-menu{
+                    position: relative;
+                        .dropdown{
+                            display: block;
+                            color: white;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            padding: 15px;
+                            .up{
+                                i{
+                                    &::before{
+                                        content:'\f0d8';
+                                    }
+                                }
+                            }
+                        
+                        }
+                        .sub-menu{
+                            position: unset;
+                            width:100%;
+                            padding: 20px;
+                        }   
+                        &:hover .sub-menu{
+                            display: none;
+                            
+                        }   
+                        .d-block {
+                            display: block !important;
+                            
+                        }    
+                    }
+               
+            }   
+        }
+        .search{       
+            .form_search{
+                position: relative;
+                input{
+                    width:100%;
+                }
+                button{
+                    position: absolute;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+//--------------------- style css
+    section .main {
+        flex-direction: column-reverse;
+    }
+  
+    section .main main section .slider img{
+        height: auto;
+    }
+    section .main main section .detail .item{
+        width:100%;
+    }
+    section .main main section .detail .item .img img {
+        height: auto;
+    }
+    footer .footer_top .footer_top_content {
+        flex-wrap: wrap;
+    }
+    section .main main section .intro {
+        font-size: 14px;
+    }
+}
+
